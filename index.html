@@ -1,0 +1,55 @@
+<html>
+    <head>
+
+        <style>
+            body {
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            p {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0;
+                /*padding: 0 30px;*/
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                font-family: Georgia, serif;
+                font-size: 3vw;
+                text-transform: capitalize;
+                opacity: 0;
+                transition: opacity 0.5s ease-in-out;
+            }
+
+            .show {
+                opacity: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <noscript>
+            <p class="show">Romeo Delta Whisky Yankee</p>
+        </noscript>
+        <p id="message"></p>
+
+        <script>
+            const messages = [
+                "romeo delta whisky yankee",
+                "rarely do whales yawn",
+                "really dirty? wash yourself"
+            ]
+
+            let rand = messages[Math.floor(Math.random() * messages.length)];
+
+            var p = document.querySelector("#message");
+            p.innerText = rand;
+
+            document.addEventListener("DOMContentLoaded", function() {
+                p.classList.add("show");
+            })
+            
+        </script>
+    </body>
+</html>
