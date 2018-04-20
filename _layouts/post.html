@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+<article class="post">
+    <h2>{{ page.title }}</h2>
+    
+    {{ content }}
+    
+    <p class="meta">
+        <a href="{{ page.url }}">{{ page.date | date: "%A %B %e %Y - %I:%M%P" }}</a>
+    </p>
+</article>

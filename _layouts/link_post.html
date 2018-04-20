@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+
+
+<article class="post">
+    <a href="{{ page.link_url }}"><h3>&#8594; {{ page.link_title }}</h3></a>
+    
+    {{ content }}
+    
+    <p class="meta">
+        <a href="{{ page.url }}">{{ page.date | date: "%A %B %e %Y - %I:%M%P" }}</a>
+    </p>
+</article>
+
+

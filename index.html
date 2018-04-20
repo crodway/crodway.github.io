@@ -1,55 +1,39 @@
-<html>
-    <head>
-        <title>rdwy</title>
-        <style>
-            body {
-                height: 100%;
-                margin: 0;
-                padding: 0;
-            }
-            p {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                margin: 0;
-                /*padding: 0 30px;*/
-                position: absolute;
-                height: 100%;
-                width: 100%;
-                font-family: Georgia, serif;
-                font-size: 3vw;
-                text-transform: capitalize;
-                opacity: 0;
-                transition: opacity 0.5s ease-in-out;
-            }
+---
+layout: default
+title: rdwy
+---
 
-            .show {
-                opacity: 1;
-            }
-        </style>
-    </head>
-    <body>
-        <noscript>
-            <p class="show">Romeo Delta Whisky Yankee</p>
-        </noscript>
-        <p id="message"></p>
-
-        <script>
-            const messages = [
-                "romeo delta whisky yankee",
-                "rarely do whales yawn",
-                "really dirty? wash yourself"
-            ]
-
-            let rand = messages[Math.floor(Math.random() * messages.length)];
-
-            var p = document.querySelector("#message");
-            p.innerText = rand;
-
-            document.addEventListener("DOMContentLoaded", function() {
-                p.classList.add("show");
-            })
-            
-        </script>
-    </body>
-</html>
+    {% for post in paginator.posts %}
+    <article>
+    {% if post.layout == "post" %}
+        <h3>{{ post.title }}</h3>
+    {% endif %}
+    
+    {% if post.layout == "link_post" %}
+        <a href="{{ post.link_url }}"><h3>&#8594; {{ post.link_title }}</h3></a>
+    {% endif %}
+    
+        {{ post.content }}
+        
+        <p class="meta">
+            <a href="{{ post.url }}">{{ post.date | date: "%B %e %Y - %I:%M%P" }}</a>
+        </p>
+    </article>
+    <br />
+    {% endfor %}
+    
+    
+    <!-- Pagination links -->
+    <div class="pagination">
+      {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path }}" class="previous">Newer</a>
+      {% else %}
+        <span class="previous">Newer</span>
+      {% endif %}
+      <!--<span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>-->
+      {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path }}" class="next">Older</a>
+      {% else %}
+        <span class="next ">Older</span>
+      {% endif %}
+    </div>
