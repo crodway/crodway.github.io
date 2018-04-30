@@ -20,3 +20,6 @@ gem "jekyll-theme-cayman", "~> 0.1.1"
 
 # Added at 2018-04-29 15:23:27 +0100 by chris:
 gem "jemoji", "~> 0.9.0"
+
+# Added at 2018-04-30 20:19:17 +0100 by chris:
+gem "jekyll-feed", "~> 0.9.3"

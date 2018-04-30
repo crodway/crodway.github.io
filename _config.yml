@@ -1,8 +1,14 @@
+title: rdwy.org
+description: "My anonymous musings"
+url: http://rdwy.org
+author: rdwy
+
 theme: jekyll-theme-cayman
 
 plugins:
     - jekyll-paginate
     - jemoji
+    - jekyll-feed
     
-paginate: 6
+paginate: 8
 paginate_path: "/:num/"
