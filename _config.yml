@@ -1,5 +1,5 @@
 title: rdwy.org
-description: "My anonymous musings"
+description: "Anonymous musings"
 url: http://rdwy.org
 author: rdwy
 
@@ -10,5 +10,5 @@ plugins:
     - jemoji
     - jekyll-feed
     
-paginate: 8
+paginate: 10
 paginate_path: "/:num/"
