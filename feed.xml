@@ -13,12 +13,17 @@ layout: none
         <item>
             {% if post.layout == "post" %}
             <title>{{ post.title }}</title>
+            <link>{{ post.url | prepend: site.url }}
             {% endif %}
             
             {% if post.layout == "link_post" %}
             <title>{{ post.link_title }}</title>
             <link>{{ post.link_url }}</link>
-            {% endif %}         
+            {% endif %}
+            
+            {% if post.layout == "micro" %}
+            <link>{{ post.url | prepend: site.url }}
+            {% endif %}                    
               
             <description>
                 {{ post.content | escape }}
