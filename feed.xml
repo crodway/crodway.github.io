@@ -13,7 +13,7 @@ layout: none
         <item>
             {% if post.layout == "post" %}
             <title>{{ post.title }}</title>
-            <link>{{ post.url | prepend: site.url }}
+            <link>{{ post.url | prepend: site.url }}</link>
             {% endif %}
             
             {% if post.layout == "link_post" %}
@@ -22,7 +22,7 @@ layout: none
             {% endif %}
             
             {% if post.layout == "micro" %}
-            <link>{{ post.url | prepend: site.url }}
+            <link>{{ post.url | prepend: site.url }}</link>
             {% endif %}                    
               
             <description>
