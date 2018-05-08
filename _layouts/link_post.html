@@ -2,15 +2,21 @@
 layout: default
 ---
 
-
-
-<article class="post">
-    <a href="{{ page.link_url }}"><h3>&#8594; {{ page.link_title }}</h3></a>
+<article class="post h-entry">
+    <a href="{{ page.link_url }}">
+        <h3 class="p-name">&#8594; {{ page.link_title }}</h3>
+    </a>
     
-    {{ content }}
+    <div class="e-content">
+        {{ content }}
+    </div>
     
     <p class="meta">
-        <a href="{{ page.url }}">{{ page.date | date: "%A %B %e %Y - %I:%M%P" }}</a>
+        <a href="{{ page.url }}" class="u-url">
+            <time class="dt-published" datetime="{{ page.date }}">
+                {{ page.date | date: "%A %B %e %Y - %I:%M%P" }}
+            </time>
+        </a>
     </p>
 </article>
 

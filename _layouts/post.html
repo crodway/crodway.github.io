@@ -2,12 +2,18 @@
 layout: default
 ---
 
-<article class="post">
-    <h2>{{ page.title }}</h2>
+<article class="post h-entry">
+    <h2 class="p-name">{{ page.title }}</h2>
     
-    {{ content }}
+    <div class="e-content">
+        {{ content }}
+    </div>
     
     <p class="meta">
-        <a href="{{ page.url }}">{{ page.date | date: "%A %B %e %Y - %I:%M%P" }}</a>
+        <a href="{{ page.url }}" class="u-url">
+            <time class="dt-published" datetime="{{ page.date }}">
+                {{ page.date | date: "%A %B %e %Y - %I:%M%P" }}
+            </time>
+        </a>
     </p>
 </article>
