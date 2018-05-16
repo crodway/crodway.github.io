@@ -1,7 +1,7 @@
 ---
 layout: link_post
 date: 2018-05-08T23:44:44+01:00
-link_url: https://www.youtube.com/watch?v=eHplgMrHFMw&app=desktop
+link_url: https://www.youtube.com/watch?v=eHplgMrHFMw
 link_title: "Arrested Development | Season 5 Official Trailer [HD] | Netflix"
 ---
 
