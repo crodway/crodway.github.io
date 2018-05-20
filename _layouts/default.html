@@ -1,9 +1,12 @@
 <!DOCTYPE html>
+<html class="h-feed">
     <head>
         <title>{{ page.title }}</title>
         <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
         <link rel="stylesheet" type="text/css" href="/css/main.css">
         <link rel="alternate" type="application/rss+xml"  href="{{ site.url }}/feed.xml" title="{{ site.title }}">
+        <link rel="authorization_endpoint" href="https://indieauth.com/auth">
+        <link rel="token_endpoint" href="https://tokens.indieauth.com/token">
         <link rel="me" href="https://github.com/crodway">
         <link rel="me" href="https://micro.blog/rdwy">
         <link rel="me" href="https://twitter.com/rdwyorg">
@@ -12,7 +15,7 @@
     </head>
     <body>
         <div class="container">
-            <h1>rdwy</h1>
+            <h1>rdwy</h1>           
             <div class="main-content">
                 {{ content }}
             </div>
