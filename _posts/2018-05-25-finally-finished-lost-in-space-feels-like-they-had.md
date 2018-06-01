@@ -4,4 +4,4 @@ layout: micro
 
 ---
 
-Finally finished Lost in Space. Luckily the wage budget for next season should now be lower to offset the final episode's fx budget. I do love a good robot fight.
+Finally finished Lost in Space. I wonder if they had to write out 80% of the cast for next season in order to pay for the effects in that final episode. I do love a good robot fight.
