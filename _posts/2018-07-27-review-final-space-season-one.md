@@ -1,7 +1,7 @@
 ---
 layout: micro
 date: '2018-07-27T22:39:23+01:00'
-title: ''
+title: 'Review: Final Space Season 1'
 slug: 'review-final-space-season-one'
 lang: en
 ---
