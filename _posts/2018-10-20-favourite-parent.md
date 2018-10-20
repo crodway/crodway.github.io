@@ -7,12 +7,12 @@ lang: en
 ---
 Daddy/ Daughter Day of Fun:
 
-☑️ Bus journey 
-☑️ Playground
-☑️ New hair clips
-☑️ Indoor train ride
-☑️ McDonalds lunch
-☑️ Homemade rollercoaster simulator
+☑️ Bus journey   
+☑️ Playground   
+☑️ New hair clips   
+☑️ Indoor train ride   
+☑️ McDonalds lunch   
+☑️ Homemade rollercoaster simulator   
 
 Achievement Unlocked: Favourite Parent.
 
